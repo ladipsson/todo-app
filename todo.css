@@ -1,0 +1,180 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Josefin Sans", serif;
+}
+
+:root {
+  --success: #16c47f;
+  --yellow: #ffd65a;
+  --orange: #ff9d23;
+  --red: #f93827;
+  --dark: #1d1616;
+}
+
+body {
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 120px auto 0 auto;
+  width: 30rem;
+  /* height: 60vh; */
+  /* background-color: var(--yellow); */
+  /* transform: translateY(50%); */
+  /* border-radius: 1.8rem; */
+  /* overflow: hidden; */
+}
+.stats {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  border-radius: 1.8rem;
+  gap: 2.5rem;
+  width: 100%;
+  background-color: var(--orange);
+}
+
+.details {
+  width: 70%;
+}
+.details h1 {
+  color: #fff;
+}
+.details p {
+  color: var(--dark);
+  margin-top: 1rem;
+}
+
+#progressbar {
+  width: 100%;
+  height: 10px;
+  background-color: var(--success);
+  margin-top: 0.5rem;
+  border-radius: 5px;
+}
+#progress {
+  width: 100%;
+  height: 10px;
+  border-radius: 5px;
+  background-color: var(--yellow);
+  transition: all 0.3s ease;
+}
+.stats-numbers {
+  width: 5rem;
+  height: 5rem;
+  background-color: var(--success);
+  border-radius: 50%;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.stats-numbers p {
+  margin: 0 auto;
+}
+
+form {
+  margin-top: 2.5rem;
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+}
+
+input {
+  flex: 1;
+  padding: 1rem 1.5rem;
+  border: 3px solid var(--yellow);
+  border-radius: 0.5rem;
+  outline: none;
+  font-size: 1.5rem;
+}
+
+form button {
+  padding: 1rem;
+  background-color: var(--yellow);
+  border: none;
+  color: var(--red);
+  font-weight: bold;
+  font-size: 2rem;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  transition: all 0.3s ease;
+}
+form button:hover {
+  background-color: var(--red);
+  color: var(--yellow);
+}
+
+#todo-list {
+  list-style: none;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#todo-list li {
+  width: 100%;
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid var(--yellow);
+}
+
+.task {
+  display: flex;
+  gap: 1rem;
+}
+.taskItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.checkbox {
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+}
+
+.icons {
+  display: flex;
+  gap: 1rem;
+}
+.icons button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.fa-pen-to-square {
+  color: var(--yellow);
+  font-size: 1.5rem;
+}
+.fa-trash {
+  color: var(--red);
+  font-size: 1.5rem;
+}
+
+.task p {
+  color: var(--orange);
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
+.task.completed {
+  text-decoration: line-through;
+  color: var(--success);
+}

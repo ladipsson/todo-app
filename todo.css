@@ -178,3 +178,44 @@ form button:hover {
   text-decoration: line-through;
   color: var(--success);
 }
+
+@media screen and (max-width: 768px) {
+  main {
+    width: 90%;
+  }
+  .stats {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+  .stats-numbers {
+    width: 4rem;
+    height: 4rem;
+    font-size: 1.2rem;
+    margin: 0 auto;
+  }
+  .details {
+    width: 100%;
+  }
+  form {
+    flex-direction: column;
+  }
+  input {
+    width: 100%;
+  }
+  form button {
+    width: 100%;
+  }
+  #todo-list li {
+    width: 100%;
+  }
+  .task p {
+    font-size: 1rem;
+  }
+  .icons {
+    gap: 0.5rem;
+  }
+  .icons button {
+    font-size: 1rem;
+  }
+}
